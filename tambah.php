@@ -40,7 +40,7 @@ if( isset($_POST["submit"]) ) {
   <div class="form-row">
     <div class="col-md-4 mb-3">
       <label for="no_cust">Nomor Pelanggan</label>
-      <input type="text" name="no_cust" class="form-control border border-dark" id="no_cust" placeholder="nama" required>
+      <input type="number" name="no_cust" class="form-control border border-dark" id="no_cust" placeholder="nama" required>
     </div>
     <div class="col-md-4 mb-3">
       <label for="nama">Nama Lengkap</label>
@@ -55,14 +55,14 @@ if( isset($_POST["submit"]) ) {
     </div>
     <div class="col-md-4 mb-3">
       <label for="email">Email</label>
-      <input type="text" name="email" class="form-control border border-dark" id="email" placeholder="nama" required>
+      <input type="email" name="email" class="form-control border border-dark" id="email" placeholder="nama" required>
     </div>
   </div>
 
   <div class="form-row">
     <div class="col-md-4 mb-3">
       <label for="handphone">Nomor Handphone</label>
-      <input type="text" name="handphone" class="form-control border border-dark" id="handphone" required>
+      <input type="number" name="handphone" class="form-control border border-dark" id="handphone" required>
     </div>
   </div>
 

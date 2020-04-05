@@ -16,7 +16,7 @@
 	$halamanAktif = ( isset($_GET["halaman"]) ) ? $_GET["halaman"] : 1;
 	$awalData = ( $jumlahDataPerHalaman * $halamanAktif ) - $jumlahDataPerHalaman;
 
-	$penyewa = query("SELECT * FROM tb_penyewa LIMIT $awalData, $jumlahDataPerHalaman");
+	$penyewa = query("SELECT * FROM tb_penyewa ORDER BY id DESC LIMIT $awalData, $jumlahDataPerHalaman ");
 	// $penyewa = query("SELECT * FROM tb_penyewa");
 
 	// tombol cari ditekan
